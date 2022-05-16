@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [DistributedParallelExecutionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test-Runner-2(failed)">
+    <classes>
+      <class name="com.crm.comcast.ContactTest.test.CreatingContactTest">
+        <methods>
+          <include name="closeDataBaseConnection"/>
+          <include name="closeApplicationWindow"/>
+          <include name="openBrowser"/>
+          <include name="crateContactAndDeleteSameContactTest"/>
+          <include name="logOutOfApplication"/>
+          <include name="contactEditTest"/>
+          <include name="closeBrowser"/>
+          <include name="openDataBaseConnection"/>
+          <include name="deleteContactTest"/>
+          <include name="crateContactWithoutMandatoryFieldTest"/>
+          <include name="logOInToApplication"/>
+          <include name="launchApplicationWindow"/>
+          <include name="createContactInSupportGroupTest"/>
+        </methods>
+      </class> <!-- com.crm.comcast.ContactTest.test.CreatingContactTest -->
+      <class name="com.crm.comcast.CampaignsTest.Test.CreatingCampaignTest">
+        <methods>
+          <include name="logOutOfApplication"/>
+          <include name="closeBrowser"/>
+          <include name="openDataBaseConnection"/>
+          <include name="closeDataBaseConnection"/>
+          <include name="closeApplicationWindow"/>
+          <include name="createCampainTest"/>
+          <include name="createCampainWithProductTest"/>
+          <include name="openBrowser"/>
+          <include name="logOInToApplication"/>
+          <include name="launchApplicationWindow"/>
+        </methods>
+      </class> <!-- com.crm.comcast.CampaignsTest.Test.CreatingCampaignTest -->
+    </classes>
+  </test> <!-- Test-Runner-2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test-Runner-1(failed)">
+    <classes>
+      <class name="com.crm.comcast.OrgTest.Test.CreatingOrganizationTest">
+        <methods>
+          <include name="logOutOfApplication"/>
+          <include name="closeBrowser"/>
+          <include name="openDataBaseConnection"/>
+          <include name="createOrganizationUsingDataProviderTest"/>
+          <include name="closeDataBaseConnection"/>
+          <include name="closeApplicationWindow"/>
+          <include name="createOrganizationTest"/>
+          <include name="openBrowser"/>
+          <include name="logOInToApplication"/>
+          <include name="launchApplicationWindow"/>
+        </methods>
+      </class> <!-- com.crm.comcast.OrgTest.Test.CreatingOrganizationTest -->
+    </classes>
+  </test> <!-- Test-Runner-1(failed) -->
+</suite> <!-- Failed suite [DistributedParallelExecutionSuite] -->
